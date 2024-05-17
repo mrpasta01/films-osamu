@@ -4,7 +4,6 @@
 	$c = 11;
 	$o = 0;
 	if(isset($_GET['count']))	$c = intval($_GET['count']);
-	if($c>9) $c=11;
 		if(isset($_GET['offset']))	$o = intval($_GET['offset']);
 	
 	$sql = sprintf('SELECT `ID`, `Title`, `Opisanie`, `Rezishor`, `Year`, `POSTER` FROM `videos` LIMIT %d OFFSET %d', $c,$o);
