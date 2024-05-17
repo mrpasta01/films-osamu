@@ -1,7 +1,7 @@
 function load_films(){
 		$.ajax({
 		//url: 'http://172.17.4.160/osamu/api/get_videos.php?count=11&offset=0',
-		url: 'http://217.71.129.139:4589/osamu/api/get_videos.php?count=9&offset=0',
+		url: 'http://217.71.129.139:4589/osamu/api/get_videos.php?count=11&offset=0',
 		method: 'get',  
 		dataType: 'json',
 		success: function(data){
