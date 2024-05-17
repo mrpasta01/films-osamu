@@ -1,0 +1,95 @@
+body{
+    font-size: 35px;
+	background-color: rgb(100, 109, 126);
+}
+
+* {
+	box-sizing: border-box;
+	color: midnightblue;
+}
+
+#wrapper {
+	width: 1890px;
+	margin: 30px auto;
+	border: 4px solid rgb(119, 128, 151);
+}
+#header {
+	height: 250px;
+	padding: 20px;
+	border: 4px solid rgb(119, 128, 151);
+	text-align: center;
+}
+
+#header > img{
+    width: 80%;
+	height: 100%;
+}
+#container {
+	display: flex;
+}
+#films {
+    display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	width: 1886px;
+	padding: 20px;
+	border: 4px solid rgb(119, 128, 151);
+}
+
+#footer {
+	height: 150px;
+	padding: 20px;
+	border: 4px solid rgb(119, 128, 151);
+	text-align: center;
+}
+.film {
+    display: flex;
+    text-align: center;
+    border-radius: 5%;
+	border: 4px solid rgb(119, 128, 151);
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.foto > img{
+	height: 100%;
+    width: 30%;
+	transition: width 2s ease 1s;
+}
+.film:hover{
+	cursor: pointer;
+	border: 0px;
+	background-color: rgb(100, 109, 126);
+	filter: drop-shadow(0 0 25px yellow);
+
+}
+.film:hover > .foto>img{
+	width:50%;
+	height:100%;
+}
+.film:hover > .ustal{
+	filter: hue-rotate(150deg);
+}
+#GS{
+	text-decoration:underline;
+	color:khaki;
+}
+#GS:hover{
+	text-decoration:underline;
+	cursor: pointer;
+}
+
+p {
+	-webkit-text-stroke: 1px white;
+	text-stroke: 1px white;
+	background-color: #467CBC;
+	padding: 5px;
+	font-size: 25px;
+	font-weight: bold;
+	font-family: Arial;
+	border-radius: 5%;
+}
+
+h6{
+	letter-spacing: 4px;
+}
