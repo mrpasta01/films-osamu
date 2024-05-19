@@ -1,7 +1,7 @@
 <?php
 	require_once 'config.php';
 	
-	$c = 11;
+	$c = 12;
 	$o = 0;
 	if(isset($_GET['count']))	$c = intval($_GET['count']);
 		if(isset($_GET['offset']))	$o = intval($_GET['offset']);
