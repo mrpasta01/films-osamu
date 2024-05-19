@@ -1,9 +1,10 @@
 <?php
 	require_once 'config.php';
 	
-	$c = 12;
+	$c = 5;
 	$o = 0;
 	if(isset($_GET['count']))	$c = intval($_GET['count']);
+			if ($c>5) $c=5;
 	if(isset($_GET['offset']))	$o = intval($_GET['offset']);
 	
 	$sql = sprintf('SELECT `ID`, `Title`, `Opisanie`, `Rezishor`, `Year`, `POSTER` FROM `videos` LIMIT %d OFFSET %d', $c,$o);
