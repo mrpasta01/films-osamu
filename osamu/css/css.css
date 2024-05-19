@@ -2,6 +2,9 @@ body{
     font-size: 35px;
 	background-color: rgb(100, 109, 126);
 }
+div.any{
+	position: absolute; 
+}
 
 * {
 	box-sizing: border-box;
@@ -29,7 +32,7 @@ body{
 }
 #films {
     display: grid;
-	grid-template-columns: repeat(5, 1fr);
+	grid-template-columns: repeat(3, 1fr);
 	width: 1886px;
 	padding: 20px;
 	border: 4px solid rgb(119, 128, 151);
@@ -70,26 +73,6 @@ body{
 .film:hover > .ustal{
 	filter: hue-rotate(150deg);
 }
-#GS{
-	text-decoration:underline;
-	color:khaki;
-}
-#GS:hover{
-	text-decoration:underline;
-	cursor: pointer;
-}
-
-p {
-	-webkit-text-stroke: 1px white;
-	text-stroke: 1px white;
-	background-color: #467CBC;
-	padding: 5px;
+.opisanie{
 	font-size: 25px;
-	font-weight: bold;
-	font-family: Arial;
-	border-radius: 5%;
-}
-
-h6{
-	letter-spacing: 4px;
 }
