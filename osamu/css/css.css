@@ -76,3 +76,22 @@ div.any{
 .opisanie{
 	font-size: 25px;
 }
+
+#cnop{
+	display: flex;
+	align-self: center;
+	justify-content: center;
+}
+
+Button{
+	height: 50px;
+	width: 150px;
+	transition: width 2s ease 1s;
+	background-color: rgb(167, 180, 197);
+	border: 2px solid rgb(19, 102, 204);
+	color: white;
+	
+}
+Button:hover{
+	width: 300px;
+}
